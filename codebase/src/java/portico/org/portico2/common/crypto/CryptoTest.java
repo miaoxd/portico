@@ -89,7 +89,7 @@ public class CryptoTest
 		sample.startTime = System.nanoTime();
 		
 		// Step 1. Key Generation
-		SecretKey key = createSecretKey( "evelyn", 128 );
+		SecretKey key = createSecretKey( "password", 128 );
 		sample.keyCreate = System.nanoTime();
 		
 		// Step 2. Create Cipher Object
