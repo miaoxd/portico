@@ -142,10 +142,12 @@ rti.network.multicast.nic       = SITE_LOCAL
 	#      Cipher: Cipher configuration string used in create Cipher. Only supports AES currently.
 	#        Mode: Encryption mode. Supports ECB, CBC, CFB, CTR
 	#      
-	rti.network.multicast.crypto.enabled  = true
-	rti.network.multicast.crypto.keylen   = 128
-	rti.network.multicast.crypto.cipher   = AES/CFB/NoPadding
-	rti.network.multicast.crypto.key      = evelyn
+	rti.network.multicast.crypto.enabled    = true
+	rti.network.multicast.crypto.keylen     = 128
+	rti.network.multicast.crypto.cipher     = AES/CFB/NoPadding
+	rti.network.multicast.crypto.key        = password
+	rti.network.multicast.crypto.privateKey = ~/.ssh/id_rsa
+	rti.network.multicast.crypto.publicKey  = ...
 
 
 # (R.6) Unicast Network Connection

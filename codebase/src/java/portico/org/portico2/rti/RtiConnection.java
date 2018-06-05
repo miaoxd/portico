@@ -72,6 +72,11 @@ public class RtiConnection implements IApplicationReceiver
 			disconnect();
 			throw new JRTIinternalError( "An RTI is already running" );
 		}
+		
+		// 3. Initialize the CryptoManager
+		// TODO
+		//  - Generate Session Key Store (generates authTokens and stores against sessionKeys for each)
+		//  - Load Private Key from File
 	}
 	
 	public void disconnect()
